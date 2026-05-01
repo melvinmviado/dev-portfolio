@@ -1,0 +1,169 @@
+.curriculum-page {
+    min-height: 100vh;
+    background-color: #ffffff;
+    color: var(--text-primary);
+}
+
+.curriculum-nav {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+    background: var(--nav-bg);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.back-link:hover {
+    color: var(--accent-hover);
+    transform: translateX(-5px);
+}
+
+.curriculum-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.curriculum-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.curriculum-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.curriculum-header p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Directory Explorer */
+.directory-explorer {
+    background: #0f172a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    border: 1px solid #1e293b;
+}
+
+.explorer-header {
+    background: #1e293b;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.explorer-header .dots {
+    display: flex;
+    gap: 6px;
+    position: absolute;
+    left: 1.5rem;
+}
+
+.explorer-header .dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.explorer-header .dots span:nth-child(1) { background: #ff5f56; }
+.explorer-header .dots span:nth-child(2) { background: #ffbd2e; }
+.explorer-header .dots span:nth-child(3) { background: #27c93f; }
+
+.explorer-header .title {
+    color: #94a3b8;
+    font-family: monospace;
+    font-size: 0.85rem;
+}
+
+.explorer-body {
+    padding: 2rem;
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+    min-height: 400px;
+}
+
+/* Directory Items */
+.directory-item {
+    margin-bottom: 0.15rem;
+}
+
+.directory-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.directory-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    user-select: none;
+    text-decoration: none;
+    color: inherit;
+    flex-grow: 1;
+}
+
+.directory-header:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--accent);
+}
+
+.arrow {
+    font-size: 0.6rem;
+    transition: transform 0.2s ease;
+    color: #64748b;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-spacer {
+    width: 20px;
+}
+
+.arrow.open {
+    transform: rotate(90deg);
+}
+
+.icon {
+    font-size: 1.1rem;
+}
+
+.name {
+    font-size: 0.95rem;
+}
+
+.directory-children {
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    border-left: 1px solid #334155;
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .curriculum-header h1 {
+        font-size: 2.2rem;
+    }
+}
