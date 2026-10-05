@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import logo from './assets/logo.png'
 import kaliIcon from './assets/kali.png'
+import desktopPC from './assets/desktop-tower.jpg'
 import winServerIcon from './assets/win-server.png'
 import ubuntuIcon from './assets/ubuntu.png'
 import winIcon from './assets/windows.png'
@@ -53,9 +54,9 @@ function App() {
       <main>
         <section id="home" className="hero">
           <div className="hero-content">
-            <span className="badge animate">Melvin Viado — Security Specialist</span>
+            <span className="badge animate">Melvin Viado — General IT</span>
             <h1 className="animate delay-1">Hi, I'm <span>Melvin Viado.</span></h1>
-            <p className="animate delay-2">Detail-oriented Cybersecurity graduate dedicated to protecting organizational assets through proactive threat identification, vulnerability assessment, and the implementation of resilient defense configurations.</p>
+            <p className="animate delay-2">Detail-oriented IT professional dedicated to supporting organizational technology needs through effective system management, technical troubleshooting, process improvement, and reliable infrastructure solutions.</p>
 
             <div className="btn-group animate delay-3">
               <a href="#repository" className="btn btn-primary">View Repository</a>
@@ -66,24 +67,24 @@ function App() {
 
         <section id="skills" className="skills">
           <div className="section-header animate">
-            <h2>Security Expertise</h2>
-            <p>Comprehensive knowledge across the modern threat landscape.</p>
+            <h2>IT Expertise</h2>
+            <p>Comprehensive knowledge of modern information technology systems, infrastructure, and support practices.</p>
           </div>
           <div className="skills-grid">
             <div className="skill-card animate delay-1">
               <div className="skill-icon">🛡️</div>
-              <h3>Offensive Security</h3>
-              <p>Penetration testing, vulnerability research, and red teaming operations.</p>
+              <h3>Technical Support</h3>
+              <p>Troubleshooting hardware, software, networks, and user access issues to maintain reliable operations.</p>
             </div>
             <div className="skill-card animate delay-2">
               <div className="skill-icon">☁️</div>
-              <h3>Cloud Security</h3>
-              <p>Securing AWS/Azure environments and implementing Zero Trust architectures.</p>
+              <h3>Cloud and Infrastructure</h3>
+              <p>Managing cloud environments, system configurations, backups, and scalable IT infrastructure.</p>
             </div>
             <div className="skill-card animate delay-3">
               <div className="skill-icon">🔍</div>
-              <h3>Threat Hunting</h3>
-              <p>Incident response, digital forensics, and proactive log analysis.</p>
+              <h3>Systems Administration</h3>
+              <p>Supporting operating systems, user accounts, devices, applications, and routine maintenance while improving system performance and reliability.</p>
             </div>
           </div>
         </section>
@@ -94,6 +95,13 @@ function App() {
             <p>Hands-on experience configuring and securing multi-OS enterprise simulations.</p>
           </div>
           <div className="lab-grid">
+            <div className="lab-card animate delay-1">
+              <div className="lab-icon">
+                <img src={desktopPC} alt="Desktop PC" className="lab-icon-img" />
+              </div>
+              <h3>Custom PC Build and Optimization</h3>
+              <p>Part compatibility, PC assembly, Windows and Linux installation, updates on BIOS and drives, and benchmarking performance.</p>
+            </div>
             <div className="lab-card animate delay-1">
               <div className="lab-icon">
                 <img src={kaliIcon} alt="Kali Linux" className="lab-icon-img" />
@@ -130,7 +138,7 @@ function App() {
           <div className="repository-card animate">
             <div className="repo-icon">📂</div>
             <h2>Full Academic Repository</h2>
-            <p>Looking for more? My entire college curriculum, including lab write-ups, semester projects, and technical research, is organized and available in a dedicated GitHub repository.</p>
+            <p>College Cybersecurity curriculum including lab write-ups, semester projects, and technical research, is organized and available in a dedicated GitHub repository.</p>
             <a href="https://github.com/melvinmviado/Melvin-Viado-Security-Labs" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Explore Repository on GitHub</a>
           </div>
         </section>
@@ -146,7 +154,7 @@ function App() {
 
       <footer>
         <div className="footer-content">
-          <p>&copy; 2026 SecOps. Defending the digital world.</p>
+          <p>2026</p>
           <div className="footer-links">
             <a href="https://github.com/melvinmviado">GitHub</a>
           </div>
